@@ -1,0 +1,47 @@
+/* 인쇄 / PDF 저장용 — Chrome: 인쇄 → 대상 "PDF로 저장", 배경 그래픽 체크 */
+@page { size: A4; margin: 14mm 12mm; }
+* { animation: none !important; transition: none !important; }
+html { scroll-behavior: auto; }
+body { font-size: 12px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.nav, .hero__cloud, .hero__cta, .carousel__ctrl, .showcase, .modal, .final__cta, .footer__grid, .faq-wrap { display: none !important; }
+.js .reveal { opacity: 1 !important; transform: none !important; }
+.hero { padding: 0 0 12px; text-align: left; }
+.hero::before { display: none; }
+.hero__title { font-size: 30px; margin-top: 10px; letter-spacing: -1px; }
+.hero__sub { margin: 10px 0 0; max-width: none; font-size: 13px; }
+.br-pc { display: none; }
+.section { padding: 22px 0 !important; break-inside: auto; }
+.section--tint { background: none; }
+.section__head { margin-bottom: 14px; }
+.section__title { font-size: 20px; letter-spacing: -.5px; }
+.section__title br { display: none; }
+.section__desc { font-size: 12px; margin-top: 4px; }
+.proof { margin-top: 12px; }
+.proof__card { padding: 18px 22px; border-radius: 14px; }
+.proof__grid { margin-top: 14px; gap: 10px; }
+.stat strong { font-size: 24px; }
+.stat p { font-size: 10px; }
+.career { padding: 18px; gap: 18px; grid-template-columns: 180px 1fr; box-shadow: none; break-inside: avoid; }
+.career__company { font-size: 20px; }
+.clients { gap: 6px; margin-top: 10px; }
+.client { padding: 8px 10px; }
+.block-grid { margin-top: 12px; gap: 6px; }
+.freelance__big { width: 80px; height: 80px; border-radius: 16px; }
+.freelance__big span { font-size: 32px; }
+/* 프로젝트: 가로 캐러셀 → 2열 그리드 */
+.carousel { display: grid !important; grid-template-columns: 1fr 1fr; gap: 10px; overflow: visible; padding: 0 !important; }
+.pcard { break-inside: avoid; box-shadow: none; }
+.pcard__thumb { aspect-ratio: 16 / 7; }
+.pcard__body { padding: 12px; gap: 4px; }
+.pcard__title { font-size: 16px; }
+.pcard__foot { display: none; }
+.thesis { grid-template-columns: 1.3fr .7fr; gap: 20px; break-inside: avoid; }
+.phone { box-shadow: none; }
+.steps, .skills { gap: 8px; }
+.step, .skill, .edu__item { padding: 14px; break-inside: avoid; }
+.edu { gap: 8px; }
+.final { padding: 10px 0 !important; }
+.final__title { font-size: 20px; }
+.footer { padding: 10px 0 0; border: 0; }
+.footer__title { display: none; }
+a[href^="http"]::after { content: none; }
